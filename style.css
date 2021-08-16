@@ -409,7 +409,7 @@ a, a:visited, a:hover {
 
 .hero__img {
   position: relative;
-  background-image: url("/images/bg-intro-mobile.svg");
+  background-image: url("/bg-intro-mobile.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -441,7 +441,7 @@ a, a:visited, a:hover {
     content: '';
     position: absolute;
     height: 100%;
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-position: center bottom;
     width: 150%;
@@ -644,6 +644,9 @@ a, a:visited, a:hover {
   color: #2d314d;
   margin-bottom: 0.5rem;
 }
+.article__title:hover{
+  color: #31d35c;
+}
 
 .article__description {
   font-size: 0.8125rem;
@@ -665,7 +668,8 @@ a, a:visited, a:hover {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+        grid-template-areas: "logo links1 links2 cta"
+ "social links1 links2 copyright";
     gap: 1rem;
     justify-items: start;
   }
